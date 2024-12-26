@@ -1,5 +1,6 @@
 
 
+
 ## jiraIssueAPI Automation framework
 
 This RestAssured automation framework is designed for efficient API testing, 
@@ -50,15 +51,40 @@ Centralized configuration file for environment-specific data such
  
                          Clone the Repository
 
-                    git clone <repository-url>
-                    cd <repository-folder>
+                    
+                   
+				step 1 - git clone https://github.com/sanjayjagadi/jiraissueapiautomation.git
+				step 2 - git fetch 
+				step 3   git checkout master
+				step 4 - mvn clean install
+                step 5 - mvn test
+					
 ## jiraIssueAPI Automation Prerequisites
              
 
              Java 11 or higher.
             Maven 3.6 or higher.
-
-         
+##  List of Frameworks/Tools Used
+      
+1.	Java: Programming language for developing test cases.
+2.	Maven: Build tool for dependency management and test execution.
+3.	TestNG: Test framework for organizing and executing test cases.
+4.	Rest-Assured: For API testing, including CRUD operations and payload validation.
+5.	Selenium: For UI testing and capturing screenshots of failures.
+6.	ExtentReports: For detailed HTML reporting with logs and screenshots.
+7.	Apache POI: For Excel-based data-driven testing 
+8.	Log4j: For logging test execution details
+##  Test Coverage Details
+Test Coverage Details
+1. API Testing
+●	CRUD Operations:
+○	Create Issue (POST API): Verifies issue creation functionality and response validation.
+○	Retrieve Issue (GET API): Ensures the correct issue details are fetched based on the ID.
+○	Update Issue (PUT API): Validates modifications to an existing issue.
+○	Delete Issue (DELETE API): Confirms issue deletion and response status.
+●	Error Handling:
+○	Validates proper error responses for invalid requests (e.g., unauthorized access, incorrect payloads).
+  
 
 ## jiraIssueAPI Automation- Run Tests
 
@@ -90,7 +116,7 @@ ExtentReports will be generated in the target/reports folder.
 
           Supports All HTTP Methods
           Comprehensive support for GET, POST, PUT, DELETE, etc.
-		  Custom Assertions
+	  Custom Assertions
            Predefined methods for validating response status, headers, and body.
           Schema Validation
           Validates API responses against predefined JSON schemas.
@@ -98,3 +124,5 @@ ExtentReports will be generated in the target/reports folder.
           Includes utilities for common API tasks, such as authentication and response parsing.
           Reporting and Debugging
           Generates detailed test execution reports and captures evidence for debugging.
+	
+	
